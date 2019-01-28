@@ -1,6 +1,22 @@
 
-<div>
+<div [hidden]="true">
   <h2>Example of typeahead search with RxJS</h2>
   Please type your text here: 
   <app-typeahead></app-typeahead>
+</div>
+<div>
+  <h3>Array 1: [{{myArray}}]</h3>
+  <h3>Array 2: [{{myExtraArray}}]</h3>
+  <ul>
+    <li (click)="getIndex()"><a>find()</a></li>
+    <li (click)="doFilter()"><a>filter()</a></li>
+    <li (click)="doMerge()"><a>merge()</a></li>
+    <li (click)="doFilterAndReduce()"><a>merge() > filter() > reduce()</a></li>
+    <li><a (click)="doTupleMap()">map()</a></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 </div>
